@@ -1,0 +1,65 @@
+CREATE TABLE poll (
+  pollId char(8) NOT NULL DEFAULT '',
+  polltitle varchar(20) NOT NULL,
+  pollquestion varchar(50) DEFAULT NULL,
+  numOfchoice varchar(50) DEFAULT NULL,
+  answertimes  varchar(50) DEFAULT NULL,
+  PRIMARY KEY (pollId)
+);
+
+
+CREATE TABLE user (
+  userid char(8) NOT NULL DEFAULT '',
+  password varchar(20) NOT NULL,
+  fname varchar(20) DEFAULT NULL,
+  mi varchar(1) DEFAULT NULL,
+  lname  varchar(50) DEFAULT NULL,
+  usertype varchar(50) DEFAULT NULL,
+  birthday varchar(50) DEFAULT NULL,
+  email varchar(50) DEFAULT NULL,
+  address varchar(50) DEFAULT NULL,
+  phone varchar(50) DEFAULT NULL,
+  PRIMARY KEY (userid)
+);
+
+
+
+CREATE TABLE pollenrollment (
+  pollId char(8) NOT NULL DEFAULT '',
+  userid char(8) NOT NULL DEFAULT '',
+  dateRegistered date DEFAULT NULL,
+  PRIMARY KEY (pollId,userid)
+);
+
+INSERT INTO  user
+(userid,
+password,
+fname,
+mi,
+lname,
+usertype,
+birthday,
+email,
+address,
+phone)
+VALUES
+('12345678','student','Muyi','C','Zhang','admin','20010708','2946161393@qq.com','nnnnnnnn','8572722588');
+
+
+CREATE TABLE user (
+  userid char(8) NOT NULL DEFAULT '',
+  password varchar(20) NOT NULL,
+  fname varchar(20) DEFAULT NULL,
+  mi varchar(1) DEFAULT NULL,
+  lname  varchar(50) DEFAULT NULL,
+  usertype varchar(50) DEFAULT NULL,
+  birthday varchar(50) DEFAULT NULL,
+  email varchar(50) DEFAULT NULL,
+  address varchar(50) DEFAULT NULL,
+  phone varchar(50) DEFAULT NULL,
+  PRIMARY KEY (userid)
+);
+
+
+
+

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="static/style.css">
+    <title>Add a new poll form</title>
+</head>
+
+<body>
+
+<h2 style="text-align: left;">Add a new poll</h2>
+
+<form action="/addnewpoll" method="post">
+  <label for="pollId">Poll ID:</label><br>
+  <input type="text" id="pollId" name="pollId" value=""><br>
+
+  <label for="polltitle">Poll Title:</label><br>
+  <input type="text" id="polltitle" name="polltitle" size=50 value=""><br>
+
+  <label for="pollquestion">Poll Question:</label><br>
+  <input type="text" id="pollquestion" name="pollquestion" value=""><br>
+
+  <label for="numOfchoice">Number of Choices:</label><br>
+  <input type="number" id="numOfchoices" name="numOfchoices" value=""><br>
+
+  <label for="answertimes">Number of answer:</label><br>
+  <input type="number" id="answertimes" name="answertimes" value=""><br>
+
+
+
+  <input type="submit" value="Add poll">
+</form>
+</body>
+</html>

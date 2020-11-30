@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="static/style.css">
+    <title>Enrollment</title>
+</head>
+
+<body>
+
+<h2 style="text-align: left;">Enroll a user in a poll</h2>
+
+<form action="/addnewpollenrollment" method="post">
+  <label for="userid">ID of the User:</label><br>
+  <input type="text" id="userid" name="userid" value=""><br>
+
+  <label for="pollId">Poll ID:</label><br>
+  <input type="text" id="pollId" name="pollId" value=""><br>
+  
+  <input type="submit" value="Enroll student">
+</form>
+
+</body>
+</html>

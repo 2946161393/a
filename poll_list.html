@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="static/style.css">
+    <title>Poll List</title>
+</head>
+<body>
+<h1>Poll List</h1>
+   <table id="mytable" border = 1>
+            <tr>
+                <th>Poll ID</th>
+                <th>Poll Title</th>
+                <th>Number of choices</th>
+            </tr>
+         {% for poll in poll_list %}
+            <tr>
+                <td> {{ poll['pollId'] }} </td>
+                <td> {{ poll['polltitle'] }} </td>
+                <td> {{ poll['numOfchoices'] }} </td>
+            </tr>
+         {% endfor %}
+   </table>
+
+</body>
+</html>
+

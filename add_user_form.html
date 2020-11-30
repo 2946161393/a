@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="static/style.css">
+    <title>Registration form</title>
+</head>
+
+<body>
+
+<h2 style="text-align: left;">Add a new poll</h2>
+
+<form action="/addnewuser" method="post">
+  <label for="userid">UserID:</label><br>
+  <input type="text" id="userid" name="userid" value=""><br>
+
+  <label for="password">Password:</label><br>
+  <input type="text" id="password" name="password" value=""><br>
+
+  <label for="fname">First Name:</label><br>
+  <input type="text" id="fname" name="fname" value=""><br>
+
+  <label for="mi">Middle Initial:</label><br>
+  <input type="text" id="mi" name="mi" value=""><br>
+
+  <label for="lname">Last Name:</label><br>
+  <input type="text" id="lname" name="lname" value=""><br>
+
+  <label for="birthday">Birth Date:</label><br>
+  <input type="text" id="birthday" name="birthday" value=""><br>
+
+  <label for="address">Address:</label><br>
+  <input type="text" id="address" name="address" size=40  value=""><br>
+
+  <label for="email">Email:</label><br>
+  <input type="text" id="email" name="email" value=""><br>
+
+  <label for="phone">Phone:</label><br>
+  <input type="text" id="phone" name="phone" value=""><br>
+
+  <label for="usertype">User Type:</label><br>
+  <select name="usertype" id="usertype">
+    <option value="admin">Admin</option>
+    <option value="user">User</option>
+  </select>
+  <br>
+  <br>
+
+  <input type="submit" value="Add user">
+</form>
+
+</body>
+</html>

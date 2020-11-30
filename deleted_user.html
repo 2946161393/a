@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="static/style.css">
+    <title>Added User</title>
+</head>
+<body>
+{% if record_count == 1 %}
+<h1>The following user deleted from registrar's database</h1>
+{% else%}
+<h1>The following user to be deleted from registrar's database could not be found</h1>
+{% endif %}
+   <table id="mytable" border = 1>
+            <tr>
+                <td>User ID</td>
+                <td> {{ userid }} </td>  
+            </tr>
+
+   </table>
+
+</body>
+</html>

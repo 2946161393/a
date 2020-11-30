@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="static/style.css">
+    <title>Poll List</title>
+</head>
+<body>
+<h1>The poll that {{ firstName}} {{ lastName }} enrolled in</h1>
+   <table id="mytable" border = 1>
+            <tr>
+                <th>Poll ID </th>
+                <th>Date Registered</th>
+            </tr>
+         {% for poll in enrolled_poll %}
+            <tr>
+               <td> {{ poll[0] }} </td>   
+               <td> {{ poll[2] }} </td>  
+            </tr>
+         {% endfor %}
+   </table>
+
+</body>
+</html>
